@@ -1,0 +1,264 @@
+/* For small screens (Mobile/Tablet) */
+@media (max-width: 768px) {
+    .resume-layout {
+        grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+        gap: 10px; /* Reduce gap between sections on smaller screens */
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #59836e;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #335334;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0b470d;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Styling Only for Home Page */
+.home-page .intro-container {
+    background: #698a74; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home-page #name {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-page #intro {
+    font-size: 1.6em;
+    margin-top: 10px;
+    font-style: italic;
+    color: #eaeaea; 
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Resume Page Styling */
+
+/* General container styling for the resume layout */
+.resume-layout {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px auto;
+    max-width: 800px; 
+    padding: 10px;
+}
+
+/* Individual resume section */
+.resume-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out;
+}
+
+.resume-section ul {
+    list-style-type: disc; 
+    margin: 10px 0 10px 20px; 
+    padding-left: 0; 
+}
+
+.resume-section ul li {
+    margin-bottom: 8px; 
+    line-height: 1.6; 
+    text-align: left; 
+}
+
+.resume-section:hover {
+    transform: translateY(-5px); 
+}
+
+/* Resume section header styling */
+.resume-section h3 {
+    font-size: 1.8em;
+    color: #335334; 
+    border-bottom: 2px solid #59836e;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Resume items styling */
+.resume-item {
+    margin-bottom: 15px;
+}
+
+.resume-item h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.resume-item p {
+    font-size: 1em;
+    margin-bottom: 5px;
+    line-height: 1.6; 
+}
+
+.resume-item ul {
+    list-style-type: disc; 
+    margin: 10px 0 10px 20px; 
+    padding-left: 0; 
+}
+
+.resume-item ul li {
+    margin-bottom: 8px; 
+    line-height: 1.6; 
+    text-align: left; 
+}
+
+/* Highlight important parts with bold green */
+.resume-item strong {
+    color: #335334;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Contact Page Styling */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info {
+    background-color: #698a74;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: rgb(154, 199, 207);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: blue; 
+}
+
+.thank-you {
+    font-size: 1.3em;
+    color: white;
+    font-style: italic;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Footer Styling */
+footer {
+    background-color: #335334; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Ensure consistent margin between the boxes */
+.resume-section {
+    margin-bottom: 20px;  
+}
+
+/* Ensuring that all sections (Education, Work Experience, Skills, Certifications) fit within the grid */
+.resume-layout > .resume-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
