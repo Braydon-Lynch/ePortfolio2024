@@ -236,6 +236,27 @@ main h2 {
     color: #666;
 }
 
+/* New Styles for Project Details */
+.project-details {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.project-details h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.project-details p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* GitHub Link Styling */
 .github-link {
     display: inline-block;
     margin-top: 10px;
